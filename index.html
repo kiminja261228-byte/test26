@@ -1,0 +1,103 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수박카페 메뉴판</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f0eb;
+      color: #3d2c29;
+      font-family: system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+    .container {
+      padding: 30px 20px;
+      max-width: 480px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #d4c5b9;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: 800;
+      margin: 0;
+      color: #2b1e1c;
+    }
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-grow: 1;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 15px;
+      margin-bottom: 18px;
+      background-color: #eae1d7;
+      border-radius: 12px;
+    }
+    .menu-name {
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .menu-price {
+      font-size: 26px;
+      font-weight: 800;
+      color: #8c4334;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 0 10px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #6e5d59;
+      border-top: 2px dashed #d4c5b9;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>수박카페</h1>
+    </header>
+    
+    <ul class="menu-list">
+      <li class="menu-item">
+        <span class="menu-name">아메리카노</span>
+        <span class="menu-price">3,500원</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-name">카페라떼</span>
+        <span class="menu-price">4,000원</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-name">딸기케이크</span>
+        <span class="menu-price">5,500원</span>
+      </li>
+    </ul>
+
+    <footer>
+      수박의 가게입니다
+    </footer>
+  </div>
+</body>
+</html>
